@@ -10,5 +10,5 @@ mkdir makeobjects
 cd makeobjects
 zip -j -5 next-`git describe`.zip ../shared/uavobjectdefinition/*.xml
 #../build/uavobjgenerator/uavobjgenerator -java -v ../shared/uavobjectdefinition ..
-#ls -al
+ls -al
 cd ..
