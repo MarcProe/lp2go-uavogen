@@ -5,7 +5,7 @@ script:
 
 before_install:
 - "chmod +x uavo.sh"
-- ""
+- "apt-get install tree"
 
 sudo: required
 
