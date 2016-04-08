@@ -13,3 +13,5 @@ zip -j -5 next.zip ../shared/uavobjectdefinition/*.xml
 #ls -al
 cd ..
 git rev-parse HEAD
+git describe
+git rev-list --max-count=1 HEAD
