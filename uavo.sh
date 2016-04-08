@@ -3,6 +3,7 @@
 git clone https://bitbucket.org/librepilot/librepilot.git
 cd librepilot
 git checkout next
+
 echo "¯\_(ツ)_/¯"
 make all_sdk_install
 
