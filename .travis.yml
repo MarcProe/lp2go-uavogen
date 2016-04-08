@@ -5,10 +5,6 @@ script:
 
 before_install:
 - "chmod +x uavo.sh"
- - sudo add-apt-repository --yes ppa:ubuntu-sdk-team/ppa
- - sudo apt-get update -qq
- - sudo apt-get install qtbase5-dev qtdeclarative5-dev libqt5webkit5-dev libsqlite3-dev
- - sudo apt-get install qt5-default qttools5-dev-tools
  
 sudo: required
 
@@ -16,19 +12,3 @@ addons:
   apt:
     packages:
     - libc6-i386
-    - build-essential
-    - curl
-    - gdb
-    - wget
-    - debhelper
-    - p7zip-full
-    - unzip
-    - flex
-    - bison
-    - libsdl1.2-dev
-    - libudev-dev
-    - libusb-1.0-0-dev
-    - git-core
-    - git-doc
-    - gitk
-    - ccache
