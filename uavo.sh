@@ -8,10 +8,7 @@ make uavobjects
 
 mkdir makeobjects
 cd makeobjects
-zip -j -5 next.zip ../shared/uavobjectdefinition/*.xml
+zip -j -5 next-`git describe`.zip ../shared/uavobjectdefinition/*.xml
 #../build/uavobjgenerator/uavobjgenerator -java -v ../shared/uavobjectdefinition ..
 #ls -al
 cd ..
-git rev-parse HEAD
-git describe
-git rev-list --max-count=1 HEAD
