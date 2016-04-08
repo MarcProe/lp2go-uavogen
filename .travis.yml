@@ -1,0 +1,11 @@
+language: bash
+
+script:
+- "./uavo.sh"
+
+before_install:
+- "chmod +x uavo.sh"
+- ""
+
+sudo: required
+
