@@ -12,21 +12,22 @@ addons:
   apt:
     packages:
     - libc6-i386
-	- build-essential
-	- curl 
-	- gdb 
-	- wget 
-	- debhelper 
-	- p7zip-full 
-	- unzip 
-	- flex 
-	- bison 
-	- libsdl1.2-dev 
-	- libudev-dev 
-	- libusb-1.0-0-dev 
-	- git-core 
-	- git-doc 
-	- gitk 
-	- ccache	
-	- qttools5-dev-tools 
-	- qt5-default 
+    - build-essential
+    - curl 
+    - gdb 
+    - wget 
+    - debhelper 
+    - p7zip-full 
+    - unzip 
+    - flex 
+    - bison 
+    - libsdl1.2-dev 
+    - libudev-dev 
+    - libusb-1.0-0-dev 
+    - git-core 
+    - git-doc 
+    - gitk 
+    - ccache    
+    - qttools5-dev-tools 
+    - qt5-default 
+	
