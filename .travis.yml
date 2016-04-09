@@ -2,7 +2,7 @@ language: bash
 
 script:
 - "./uavo.sh https://bitbucket.org/librepilot/librepilot.git librepilot next"
-#- "./uavo.sh https://bitbucket.org/librepilot/librepilot.git librepilot rel-15.09"
+- "./uavo.sh https://bitbucket.org/librepilot/librepilot.git librepilot rel-15.09"
 #- "./uavo.sh https://bitbucket.org/alessiomorale/librepilot.git librepilot amorale/LP-276_measurement_based_d_term"
 #- "./uavo.sh https://bitbucket.org/TheOtherCliff/librepilot.git librepilot theothercliff/LP-76_Port_Autotune_from_dRonin"
 
