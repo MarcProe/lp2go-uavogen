@@ -19,14 +19,14 @@ cd lp2go-uavo
 
 #rm ${ZIP}-${COMMIT}.zip 
 echo "#"
-echo ${ZIP}${COMMIT}.zip
+echo ${ZIP}-${COMMIT}.zip
 echo "#"
-zip -j -5 ${ZIP}${COMMIT}.zip ../$2/shared/uavobjectdefinition/*.xml
+zip -j -5 "${ZIP}-${COMMIT}.zip" ../$2/shared/uavobjectdefinition/*.xml
 
 git config --global user.email "marcus@proest.net"
 git config --global user.name "Marc"
 
-git add ${ZIP}${COMMIT}.zip
+git add "${ZIP}-${COMMIT}.zip"
 git commit -m "${ZIP} ${COMMIT}"
 
 git push --quiet "https://${GH_TOKEN}@${GH_REF}" master > /dev/null 2>&1
