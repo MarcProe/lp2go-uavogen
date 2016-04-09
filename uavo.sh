@@ -1,5 +1,4 @@
 ﻿#!/bin/bash
-
 rm -rf $2
 
 git clone $1
