@@ -8,12 +8,15 @@ git checkout next
 
 mkdir makeobjects
 
-zip -j -5 makeobjects/next-`git describe`.zip ../shared/uavobjectdefinition/*.xml
+zip -j -5 makeobjects/next-`git describe`.zip shared/uavobjectdefinition/*.xml
 
 cd makeobjects
 
 git init
-git add next-`git describe`.zip
+git config --global user.email "marcus@proest.net"
+git config --global user.name "Marc"
+
+git add *.zip
 git commit -m "Yo."
 
 #curl -X POST \--verbose \--header "Content-Type: application/zip" \--data-binary @next-`git describe`.zip \https://api.github.com/gists
