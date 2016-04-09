@@ -8,7 +8,7 @@ export COMMIT=`git describe`
 
 cd ..
 
-git clone https://{GH_REF}
+git clone https://${GH_REF}
 cd lp2go-uavo
 
 rm next-${COMMIT}.zip 
