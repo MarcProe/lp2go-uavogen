@@ -20,7 +20,7 @@ git checkout master
 
 rm $ZIP
 
-zip -j -0 $ZIP ../$2/shared/uavobjectdefinition/*.xml
+zip -j -5 $ZIP ../$2/shared/uavobjectdefinition/*.xml
 
 git config --global user.email "marcus@proest.net"
 git config --global user.name "Marc"
