@@ -12,3 +12,4 @@ addons:
   apt:
     packages:
     - libc6-i386
+    - pastebinit
