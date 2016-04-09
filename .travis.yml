@@ -5,17 +5,13 @@ script:
 
 before_install:
 - "chmod +x uavo.sh"
- 
-sudo: required
 
 addons:
   apt:
     packages:
     - libc6-i386
 
-
 env:
   global:
     - GH_REF: github.com/MarcProe/lp2go-uavo.git
     - secure: "srvwcAaQH0p9CxUQ1rLXxRZ9V0IYbxqu0ekU6xRF0pecO43gBa8MVF7OlaXsk05PdgLvBRxGO/tPddnX8QI/Hxcwt/EZu1UQ5SbCTiyd0Cic4LkZE7ORQZi04JMYV4E0IMhtPvDuR6rTtB8p2/aIp8RMlMrkOTRnjE5cBVytheBV/zbp1G5MoKaq+uGn3AiKOttTXIIWGA9WmshTUWPRe8djUSeHadBwrNO1HIgrJHhwM8sOcOXNS+vV/r+WK3ZP01KqFvlIqNwCPcEoGJ4At7spajOczDDPcN3jzJ+JveOwdo46UklgI6wu1YSn8gqgJiCvnKJodUOBT27VA56byooShJlXLcx/mT9seXCGrbW19bA2ebrfLR//fZen6IJx901MznqNRABiW/DivzD8FHg5F07yiKl7CjWtEfYlF5KuRR16CDlYNNWjGHCzG+vzjZEQhooMcnyISX7UoG2MLsuEjSoIbSGqVtJdo1qmY7IrpIL6J/d1UXxBMjUWVtc5ga7OCn+7F+wET0vLTuKkcW2fW14RZ2rNTtc1JmTJCo9ERPH9+v1dxqGatpHLDJJ+XsDL6VSMiTy0prOkNZXkWy+WEWs7si1pAjYSytEjIxVxJNK07SVeWTLTNTSeTpfmnomdi6pF0tu+FnIXIiT6PUARvyRd+2umX5eSAmWDIyY="
-	

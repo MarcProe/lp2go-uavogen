@@ -21,7 +21,7 @@ git config --global user.name "Marc"
 git add next-${COMMIT}.zip
 git commit -m "${COMMIT}"
 
-git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master > /dev/null 2>&1
+git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master
 
 
 cd ..
