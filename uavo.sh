@@ -12,6 +12,8 @@ export COMMIT=`git describe`
 
 cd ..
 
+rm -rf lp2go-uavo
+
 git clone https://${GH_REF}
 cd lp2go-uavo
 
