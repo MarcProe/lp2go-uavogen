@@ -23,7 +23,8 @@ echo ${ZIP}_${COMMIT}.zip
 echo "#"
 zip -h
 echo "#"
-
+echo zip -j -5 "${ZIP}_${COMMIT}.zip" ../$2/shared/uavobjectdefinition/*.xml
+echo "#"
 zip -j -5 "${ZIP}_${COMMIT}.zip" ../$2/shared/uavobjectdefinition/*.xml
 
 git config --global user.email "marcus@proest.net"
