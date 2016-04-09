@@ -1,6 +1,5 @@
 ﻿#!/usr/bin/env bash
 
-export ZIP=${3//\//-}_${COMMIT}.zip
 
 rm -rf $2
 
@@ -9,6 +8,7 @@ cd $2
 git checkout $3
 
 export COMMIT=`git describe`
+export ZIP=${3//\//-}_${COMMIT}.zip
 
 cd ..
 
