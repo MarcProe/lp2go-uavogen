@@ -6,8 +6,7 @@ cd $2
 git checkout $3
 
 export COMMIT=`git describe`
-export PRE=${3//\//-}
-export ZIP=$PRE_$COMMIT.zip
+export ZIP=${3//\//-}_$COMMIT.zip
 
 cd ..
 
