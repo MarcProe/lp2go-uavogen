@@ -21,16 +21,14 @@ rm ${ZIP}
 echo "#"
 echo ${ZIP}
 echo "#"
-zip -h
-echo "#"
-echo "#"
-zip -j -5 "${ZIP}" ../$2/shared/uavobjectdefinition/*.xml
+
+zip -j -5 ${ZIP} ../$2/shared/uavobjectdefinition/*.xml
 
 git config --global user.email "marcus@proest.net"
 git config --global user.name "Marc"
 
 git add "${ZIP}"
-git commit -m "${ZIP} ${COMMIT}"
+git commit -m "${COMMIT}"
 
 git push --quiet "https://${GH_TOKEN}@${GH_REF}" master > /dev/null 2>&1
 
