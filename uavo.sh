@@ -5,23 +5,23 @@ cd librepilot
 git checkout next
 
 export COMMIT=`git describe`
-#make uavobjects
 
-mkdir makeobjects
+cd ..
 
+git clone https://{GH_REF}
+cd lp2go-uavo
 
+zip -h
 zip -j -5 makeobjects/next-${COMMIT}.zip shared/uavobjectdefinition/*.xml
 
-cd makeobjects
-
-git init
-git config --global user.email "marcus@proest.net"
-git config --global user.name "Marc"
+#git init
+#git config --global user.email "marcus@proest.net"
+#git config --global user.name "Marc"
 
 git add next-${COMMIT}.zip
 git commit -m "${COMMIT}"
 
-git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master > /dev/null 2>&1
+git push --quiet "https://${GH_TOKEN}@${GH_REF}" master > /dev/null 2>&1
 
 
 cd ..
