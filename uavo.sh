@@ -12,9 +12,8 @@ git clone https://${GH_REF}
 cd lp2go-uavo
 
 rm next-${COMMIT}.zip 
-zip -j -5 next-${COMMIT}.zip ../shared/uavobjectdefinition/*.xml
+zip -j -5 next-${COMMIT}.zip ../librepilot/shared/uavobjectdefinition/*.xml
 
-#git init
 git config --global user.email "marcus@proest.net"
 git config --global user.name "Marc"
 
