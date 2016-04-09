@@ -11,12 +11,12 @@ cd ..
 git clone https://{GH_REF}
 cd lp2go-uavo
 
-zip -h
-zip -j -5 makeobjects/next-${COMMIT}.zip shared/uavobjectdefinition/*.xml
+rm next-${COMMIT}.zip 
+zip -j -5 next-${COMMIT}.zip ../shared/uavobjectdefinition/*.xml
 
 #git init
-#git config --global user.email "marcus@proest.net"
-#git config --global user.name "Marc"
+git config --global user.email "marcus@proest.net"
+git config --global user.name "Marc"
 
 git add next-${COMMIT}.zip
 git commit -m "${COMMIT}"
