@@ -24,7 +24,7 @@ git config --global user.email "marcus@proest.net"
 git config --global user.name "Marc"
 
 git add $ZIP
-git commit -m "$2 ${COMMIT}"
+git commit -m "$3 ${COMMIT}"
 
 git push --quiet "https://${GH_TOKEN}@${GH_REF}" master > /dev/null 2>&1
 
