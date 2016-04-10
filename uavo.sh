@@ -22,11 +22,10 @@ git checkout master
 rm $ZIP
 
 cd ../$2/shared/uavobjectdefinition/
-
 zip $ZIP *.xml
 
 cd ../../../lp2go-uavo
-mv ../$2/shared/uavobjectdefinition/$zip .
+mv ../$2/shared/uavobjectdefinition/$ZIP .
 
 git config --global user.email "marcus@proest.net"
 git config --global user.name "Marc"
