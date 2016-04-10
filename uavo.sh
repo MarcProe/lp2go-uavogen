@@ -10,6 +10,7 @@ git checkout $3
 
 export COMMIT=`git describe`
 export ZIP=${3//\//-}-$COMMIT.zip
+export FOLDER=${3//\//-}-$COMMIT
 
 cd ..
 
@@ -19,18 +20,21 @@ git clone https://${GH_REF}
 cd lp2go-uavo
 git checkout master
 
-rm $ZIP
+#rm $ZIP
 
-cd ../$2/shared/uavobjectdefinition/
+mkdir -p $FOLDER
+cp ../$2/shared/uavobjectdefinition/*.xml $FOLDER
+cd $FOLDER
 zip $ZIP *.xml
 
-cd ../../../lp2go-uavo
-mv ../$2/shared/uavobjectdefinition/$ZIP .
+cd ..
+mv $FOLDER/$ZIP ..
 
 git config --global user.email "marcus@proest.net"
 git config --global user.name "Marc"
 
 git add $ZIP
+git add $FOLDER/*.xml
 git commit -m "$3 ${COMMIT}"
 
 git push --quiet "https://${GH_TOKEN}@${GH_REF}" master > /dev/null 2>&1
