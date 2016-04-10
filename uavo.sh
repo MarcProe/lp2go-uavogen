@@ -9,7 +9,7 @@ cd $2
 git checkout $3
 
 export COMMIT=`git describe`
-export ZIP=${3//\//-}-$COMMIT.zip
+export ZIP=$COMMIT-${3//\//-}.zip
 
 cd ..
 
