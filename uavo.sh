@@ -34,7 +34,7 @@ mv xml/$FOLDER/$ZIP zip
 git config --global user.email "marcus@proest.net"
 git config --global user.name "Marc"
 
-git add .
+git add --all
 git commit -m "$3 ${COMMIT}"
 
 git push --quiet "https://${GH_TOKEN}@${GH_REF}" master > /dev/null 2>&1
