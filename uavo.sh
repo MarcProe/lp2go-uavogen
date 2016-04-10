@@ -6,7 +6,7 @@ cd $2
 git checkout $3
 
 export COMMIT=`git describe`
-export ZIP=${3//\//-}_$COMMIT.zip
+export ZIP=${3//\//-}-$COMMIT.zip
 
 cd ..
 
@@ -18,7 +18,7 @@ git checkout master
 
 rm $ZIP
 
-zip -j -5 $ZIP ../$2/shared/uavobjectdefinition/*.xml
+zip $ZIP ../$2/shared/uavobjectdefinition/*.xml
 
 git config --global user.email "marcus@proest.net"
 git config --global user.name "Marc"
