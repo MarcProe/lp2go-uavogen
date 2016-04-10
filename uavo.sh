@@ -20,8 +20,6 @@ git clone https://${GH_REF}
 cd lp2go-uavo
 git checkout master
 
-#rm $ZIP
-
 mkdir -p $FOLDER
 mkdir -p _zip
 
