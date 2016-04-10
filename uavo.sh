@@ -1,4 +1,7 @@
 ﻿#!/bin/bash
+
+#change the hash sdfgsertggbergsaey
+
 rm -rf $2
 
 git clone $1
