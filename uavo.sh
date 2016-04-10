@@ -1,6 +1,6 @@
 ﻿#!/bin/bash
 
-#change the hash sdfgsertggbergsaey
+#change the hash sfghghjdtzufhjhkfgjdf
 
 rm -rf $2
 
