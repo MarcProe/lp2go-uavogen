@@ -21,14 +21,15 @@ cd lp2go-uavo
 git checkout master
 
 mkdir -p $FOLDER
-mkdir -p _zip
+mkdir -p zip
+mkdir -p xml
 
-cp ../$2/shared/uavobjectdefinition/*.xml $FOLDER
-cd $FOLDER
+cp ../$2/shared/uavobjectdefinition/*.xml xml/$FOLDER
+cd xml/$FOLDER
 zip $ZIP *.xml > /dev/null 2>&1
 
 cd ..
-mv $FOLDER/$ZIP _zip
+mv xml/$FOLDER/$ZIP zip
 
 git config --global user.email "marcus@proest.net"
 git config --global user.name "Marc"
