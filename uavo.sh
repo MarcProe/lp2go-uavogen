@@ -23,18 +23,21 @@ git checkout master
 #rm $ZIP
 
 mkdir -p $FOLDER
+mkdir -p _zip
+
 cp ../$2/shared/uavobjectdefinition/*.xml $FOLDER
 cd $FOLDER
 zip $ZIP *.xml
 
 cd ..
-mv $FOLDER/$ZIP ..
+mv $FOLDER/$ZIP _zip
 
 git config --global user.email "marcus@proest.net"
 git config --global user.name "Marc"
 
 git add $ZIP
 git add $FOLDER/*.xml
+git add _zip/$ZIP
 git commit -m "$3 ${COMMIT}"
 
 git push --quiet "https://${GH_TOKEN}@${GH_REF}" master > /dev/null 2>&1
