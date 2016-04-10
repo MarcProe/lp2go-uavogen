@@ -28,7 +28,7 @@ cp ../$2/shared/uavobjectdefinition/*.xml xml/$FOLDER
 cd xml/$FOLDER
 zip $ZIP *.xml > /dev/null 2>&1
 
-cd ..
+cd ../..
 mv xml/$FOLDER/$ZIP zip
 
 git config --global user.email "marcus@proest.net"
