@@ -20,9 +20,9 @@ git clone https://${GH_REF}
 cd lp2go-uavo
 git checkout master
 
-mkdir -p $FOLDER
+rm -rf xml/$FOLDER
+mkdir -p xml/$FOLDER
 mkdir -p zip
-mkdir -p xml
 
 cp ../$2/shared/uavobjectdefinition/*.xml xml/$FOLDER
 cd xml/$FOLDER
