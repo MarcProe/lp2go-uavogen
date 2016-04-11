@@ -1,7 +1,5 @@
 ﻿#!/bin/bash
 
-set -x
-
 #change the hash sfghghjdtzufhjhkfgjdf
 
 rm -rf $2
