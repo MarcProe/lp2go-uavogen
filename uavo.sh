@@ -9,8 +9,7 @@ cd $2
 git checkout $3
 
 export COMMIT=`git describe`
-export ZIP=${3//\//-}-$COMMIT.zip
-export FOLDER=${3//\//-}-$COMMIT
+
 
 cd ..
 
@@ -19,6 +18,14 @@ rm -rf lp2go-uavo
 git clone https://${GH_REF}
 cd lp2go-uavo
 git checkout master
+
+python ../$2/make/scripts/version-info.py --uavodir=../$2/shared/uavobjectdefinition/ --outfile hashbash.sh --template=bashinfo.TEMPLATE
+. bashhash.sh
+rm bashhash.sh
+
+export FOLDER=${3//\//-}-$COMMIT-$UAVO_HASH
+export ZIP=$FOLDER.zip
+
 
 rm -rf xml/$FOLDER
 mkdir -p xml/$FOLDER
