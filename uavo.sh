@@ -1,5 +1,7 @@
 ﻿#!/bin/bash
 
+set -x
+
 #change the hash sfghghjdtzufhjhkfgjdf
 
 rm -rf $2
@@ -23,7 +25,7 @@ python ../$2/make/scripts/version-info.py --uavodir=../$2/shared/uavobjectdefini
 . bashhash.sh
 rm bashhash.sh
 
-export FOLDER=${3//\//-}-$COMMIT-$UAVO_HASH
+export FOLDER=${3//\//-}-$COMMIT-${UAVO_HASH:0:8}
 export ZIP=$FOLDER.zip
 
 
