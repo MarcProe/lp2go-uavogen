@@ -19,9 +19,10 @@ git clone https://${GH_REF}
 cd lp2go-uavo
 git checkout master
 
-python ../$2/make/scripts/version-info.py --uavodir=../$2/shared/uavobjectdefinition/ --outfile=.bashhash.sh --template=.bashinfo.TEMPLATE
-. .bashhash.sh
-rm .bashhash.sh
+python ../$2/make/scripts/version-info.py --uavodir=../$2/shared/uavobjectdefinition/ --outfile=.bashinfo.sh --template=.bashinfo.TEMPLATE
+. .bashinfo.sh
+cat .bashinfo.sh
+rm .bashinfo.sh
 
 export FOLDER=${3//\//-}-$COMMIT-${UAVO_HASH:0:8}
 export ZIP=$FOLDER.zip
