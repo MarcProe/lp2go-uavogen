@@ -36,7 +36,7 @@ mkdir -p xml/$FOLDER
 
 cp ../$2/shared/uavobjectdefinition/*.xml xml/$FOLDER
 
-zip -j -u zip/$ZIP xml/*.xml 
+zip -j -u "zip/$ZIP" "xml/*.xml" 
 
 git config --global user.email "marcus@proest.net"
 git config --global user.name "Marc"
