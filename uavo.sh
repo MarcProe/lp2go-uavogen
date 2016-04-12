@@ -2,6 +2,8 @@
 
 #change the hash jzdtzjhdszjhdztj
 
+zip -h
+
 rm -rf $2
 
 git clone $1
@@ -31,7 +33,6 @@ export ZIP=$FOLDER.zip
 
 rm -rf xml/$FOLDER
 mkdir -p xml/$FOLDER
-mkdir -p zip
 
 zip -d zip/$ZIP *.xml 
 
