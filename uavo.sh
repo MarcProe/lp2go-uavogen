@@ -23,7 +23,7 @@ rm .bashinfo.sh
 
 export REPOSRC=${3//\//-}
 echo $REPOSRC
-export FOLDER=-$REPOSRC-$TAG_OR_BRANCH-$HASH8-$UAVO_HASH8
+export FOLDER=$REPOSRC-$TAG_OR_BRANCH-$HASH8-$UAVO_HASH8
 export ZIP=$FOLDER.zip
 
 
@@ -33,7 +33,8 @@ mkdir -p zip
 
 cp ../$2/shared/uavobjectdefinition/*.xml xml/$FOLDER
 cd xml/$FOLDER
-zip $ZIP *.xml > /dev/null 2>&1
+zip -d $ZIP *.xml 
+zip $ZIP *.xml 
 
 cd ../..
 mv xml/$FOLDER/$ZIP zip
