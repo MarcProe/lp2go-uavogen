@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-#change the hash mreujmrjndfuzjnzr
+#change the hash jzdtzjhdszjhdztj
 
 rm -rf $2
 
