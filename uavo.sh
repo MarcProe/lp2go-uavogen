@@ -16,10 +16,13 @@ git clone https://${GH_REF}
 cd lp2go-uavo
 git checkout master
 
-python ../$2/make/scripts/version-info.py --uavodir=../$2/shared/uavobjectdefinition/ --outfile=.bashinfo.sh --template=.bashinfo.TEMPLATE
+cd ../$2
+python make/scripts/version-info.py --uavodir=shared/uavobjectdefinition/ --outfile=.bashinfo.sh --template=../lp2go-uavo/.bashinfo.TEMPLATE
 . .bashinfo.sh
 cat .bashinfo.sh
 rm .bashinfo.sh
+cd ../lp2go-uavo
+
 
 export REPOSRC=${3//\//-}
 echo $REPOSRC
