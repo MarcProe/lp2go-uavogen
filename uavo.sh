@@ -22,6 +22,7 @@ cat .bashinfo.sh
 rm .bashinfo.sh
 
 export REPOSITORY=${3//\//-}
+echo $REPOSITORY
 export FOLDER=-$REPOSITORY-$TAG_OR_BRANCH-$HASH8-$UAVO_HASH8
 export ZIP=$FOLDER.zip
 
