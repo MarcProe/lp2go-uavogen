@@ -33,16 +33,10 @@ export ZIP=$FOLDER.zip
 
 rm -rf xml/$FOLDER
 mkdir -p xml/$FOLDER
-ls -alh zip
-zip -d zip/$ZIP *.xml 
 
 cp ../$2/shared/uavobjectdefinition/*.xml xml/$FOLDER
-cd xml/$FOLDER
 
-zip -u $ZIP *.xml 
-
-cd ../..
-mv xml/$FOLDER/$ZIP zip
+zip -j -u zip/$ZIP xml/*.xml 
 
 git config --global user.email "marcus@proest.net"
 git config --global user.name "Marc"
