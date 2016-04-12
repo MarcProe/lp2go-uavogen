@@ -31,9 +31,11 @@ rm -rf xml/$FOLDER
 mkdir -p xml/$FOLDER
 mkdir -p zip
 
+zip -d zip/$ZIP *.xml 
+
 cp ../$2/shared/uavobjectdefinition/*.xml xml/$FOLDER
 cd xml/$FOLDER
-zip -d $ZIP *.xml 
+
 zip $ZIP *.xml 
 
 cd ../..
