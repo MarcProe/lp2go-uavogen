@@ -24,9 +24,8 @@ rm .bashinfo.sh
 cd ../lp2go-uavo
 
 
-export REPOSRC=${3//\//-}
-echo $REPOSRC
-export FOLDER=$REPOSRC-$TAG_OR_BRANCH-$HASH8-$UAVO_HASH8
+export REPOSRC=${TAG_OR_BRANCH-//\//-}
+export FOLDER=$REPOSRC-$HASH8-$UAVO_HASH8
 export ZIP=$FOLDER.zip
 
 
