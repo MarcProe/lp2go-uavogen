@@ -21,9 +21,9 @@ python ../$2/make/scripts/version-info.py --uavodir=../$2/shared/uavobjectdefini
 cat .bashinfo.sh
 rm .bashinfo.sh
 
-export REPOSITORY=${3//\//-}
-echo $REPOSITORY
-export FOLDER=-$REPOSITORY-$TAG_OR_BRANCH-$HASH8-$UAVO_HASH8
+export REPOSRC=${3//\//-}
+echo $REPOSRC
+export FOLDER=-$REPOSRC-$TAG_OR_BRANCH-$HASH8-$UAVO_HASH8
 export ZIP=$FOLDER.zip
 
 
