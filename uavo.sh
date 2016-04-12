@@ -8,9 +8,6 @@ git clone $1
 cd $2
 git checkout $3
 
-export COMMIT=`git describe`
-
-
 cd ..
 
 rm -rf lp2go-uavo
@@ -24,7 +21,8 @@ python ../$2/make/scripts/version-info.py --uavodir=../$2/shared/uavobjectdefini
 cat .bashinfo.sh
 rm .bashinfo.sh
 
-export FOLDER=${3//\//-}-$COMMIT-${UAVO_HASH:0:8}
+export REPOSITORY=${3//\//-}
+export FOLDER=-$REPOSITORY-$TAG_OR_BRANCH-$HASH8-$UAVO_HASH8
 export ZIP=$FOLDER.zip
 
 
@@ -43,7 +41,7 @@ git config --global user.email "marcus@proest.net"
 git config --global user.name "Marc"
 
 git add --all
-git commit -m "$REVISION"
+git commit -m "$FOLDER"
 
 git push --quiet "https://${GH_TOKEN}@${GH_REF}" master > /dev/null 2>&1
 
