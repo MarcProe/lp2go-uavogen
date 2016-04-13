@@ -5,6 +5,7 @@ script:
 - "./uavo.sh https://bitbucket.org/librepilot/librepilot.git librepilot tags/15.09"
 - "./uavo.sh https://bitbucket.org/alessiomorale/librepilot.git librepilot amorale/LP-276_measurement_based_d_term"
 - "./uavo.sh https://bitbucket.org/TheOtherCliff/librepilot.git librepilot theothercliff/LP-76_Port_Autotune_from_dRonin"
+- "./uavo.sh https://bitbucket.org/TheOtherCliff/librepilot.git librepilot theothercliff/LP-225_sonar_support"
 - "./uavo.sh https://bitbucket.org/m_thread/librepilot.git librepilot thread/Qt-5.6_Support_Mac"
 - "./uavo.sh https://bitbucket.org/mkaduk/librepilot.git librepilot searchuav"
 
