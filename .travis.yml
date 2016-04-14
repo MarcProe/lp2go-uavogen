@@ -7,7 +7,7 @@ script:
 - "./uavo.sh https://bitbucket.org/TheOtherCliff/librepilot.git librepilot theothercliff/LP-76_Port_Autotune_from_dRonin"
 - "./uavo.sh https://bitbucket.org/TheOtherCliff/librepilot.git librepilot theothercliff/LP-225_sonar_support"
 - "./uavo.sh https://bitbucket.org/m_thread/librepilot.git librepilot thread/Qt-5.6_Support_Mac"
-- "./uavo.sh https://bitbucket.org/mkaduk/librepilot.git librepilot searchuav"
+- "./uavo.sh https://bitbucket.org/mkaduk/librepilot.git librepilot LP-286_taulabs_uavbrowser_filter"
 
 before_install:
 - "chmod +x uavo.sh"
