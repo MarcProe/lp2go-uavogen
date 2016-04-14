@@ -2,8 +2,6 @@
 
 #change the hash jzdtzjhdszjhdztj
 
-zip -h
-
 rm -rf $2
 
 git clone $1
