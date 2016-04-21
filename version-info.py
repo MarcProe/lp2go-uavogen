@@ -384,6 +384,8 @@ def get_hash_of_dirs(directory, verbose = 1, raw = 0, n = 40):
 
                     # Append the hex representation of the current file's hash into the cumulative hash
                     SHAhash.update(f1hash.hexdigest())
+					if verbose == 1:
+                        print 'Progress is', SHAhash.hexdigest()
 
     except:
         import traceback
