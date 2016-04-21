@@ -497,9 +497,9 @@ string given.
         MINUTE = r.time('%M'),
         BOARD_TYPE = args.type,
         BOARD_REVISION = args.revision,
-        UAVO_HASH = get_hash_of_dirs(args.uavodir, verbose = 0, raw = 1),
-        UAVO_HASH8 = get_hash_of_dirs(args.uavodir, verbose = 0, raw = 1, n = 8),
-        UAVO_HASH_ARRAY = get_hash_of_dirs(args.uavodir, verbose = 0, raw = 0),
+        UAVO_HASH = get_hash_of_dirs(args.uavodir, verbose = 1, raw = 1),
+        UAVO_HASH8 = get_hash_of_dirs(args.uavodir, verbose = 1, raw = 1, n = 8),
+        UAVO_HASH_ARRAY = get_hash_of_dirs(args.uavodir, verbose = 1, raw = 0),
         IMAGE_HASH_ARRAY = sha1(args.image),
     )
 
