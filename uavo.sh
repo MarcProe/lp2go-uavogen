@@ -17,7 +17,8 @@ cd lp2go-uavo
 git checkout master
 
 cd ../$2
-python make/scripts/version-info.py --uavodir=shared/uavobjectdefinition/ --outfile=.bashinfo.sh --template=../lp2go-uavo/.bashinfo.TEMPLATE
+#python make/scripts/version-info.py --uavodir=shared/uavobjectdefinition/ --outfile=.bashinfo.sh --template=../lp2go-uavo/.bashinfo.TEMPLATE
+python ../version-info.py --uavodir=shared/uavobjectdefinition/ --outfile=.bashinfo.sh --template=../lp2go-uavo/.bashinfo.TEMPLATE
 . .bashinfo.sh
 cat .bashinfo.sh
 rm .bashinfo.sh
