@@ -31,6 +31,7 @@ export ZIP=$FOLDER.zip
 
 rm -rf xml/$FOLDER
 mkdir -p xml/$FOLDER
+mkdir -p zip
 
 cp ../$2/shared/uavobjectdefinition/*.xml xml/$FOLDER
 cd xml/$FOLDER
