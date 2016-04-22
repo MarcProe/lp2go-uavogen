@@ -36,7 +36,7 @@ mkdir -p zip
 cp ../$2/shared/uavobjectdefinition/*.xml xml/$FOLDER
 cd xml/$FOLDER
 
-zip $ZIP *.xml
+zip $ZIP *.xml > /dev/null 2>&1
 cd ../..
 mv xml/$FOLDER/$ZIP zip/
 
