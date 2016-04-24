@@ -25,7 +25,7 @@ cd ../lp2go-uavo
 
 
 export REPOSRC=${TAG_OR_BRANCH//\//-}
-export FOLDER=$REPOSRC-$HASH8-$UAVO_HASH8
+export FOLDER=$REPOSRC-$UAVO_HASH8
 export ZIP=$FOLDER.zip
 
 
@@ -44,7 +44,7 @@ git config --global user.email "marcus@proest.net"
 git config --global user.name "Marc"
 
 git add --all
-git commit -m "$FOLDER"
+git commit -m "$FOLDER $HASH8"
 
 git push --quiet "https://${GH_TOKEN}@${GH_REF}" master > /dev/null 2>&1
 
