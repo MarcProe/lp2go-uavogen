@@ -44,7 +44,7 @@ git config --global user.email "marcus@proest.net"
 git config --global user.name "Marc"
 
 git add --all
-git commit -m "$FOLDER $HASH8"
+git commit -m "$FOLDER-$HASH8"
 
 git push --quiet "https://${GH_TOKEN}@${GH_REF}" master > /dev/null 2>&1
 
