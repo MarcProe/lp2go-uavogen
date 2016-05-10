@@ -2,12 +2,11 @@
     "package": {
         "name": "uavo",
         "repo": "LP2Go-UAVO",
-        "subject": "marcproe",        
+        "subject": "marcproe"
     },
 
     "version": {
-        "name": "LP2Go UAVO",
-        
+        "name": "LP2Go UAVO"    
     },
 
     "files":
