@@ -23,6 +23,6 @@ deploy:
   provider: bintray
   file: "bintray.json"
   user: "marcproe"
-  key: $BINTRAY-API-KEY
+  key: ${BINTRAY-API-KEY}
 
   #dsfgsdfgsdfgsdfgwtrg
