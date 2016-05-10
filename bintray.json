@@ -1,0 +1,18 @@
+{
+    "package": {
+        "name": "uavo",
+        "repo": "LP2Go-UAVO",
+        "subject": "marcproe",        
+    },
+
+    "version": {
+        "name": "LP2Go UAVO",
+        
+    },
+
+    "files":
+        [
+        {"includePattern": "lp2go-uavo/zip/(.*)", "uploadPattern": "lp2go-uavo/zip/(.*)"}
+        ],
+    "publish": true
+}
