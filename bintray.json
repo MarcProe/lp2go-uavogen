@@ -11,7 +11,7 @@
 
     "files":
         [
-        {"includePattern": "lp2go-uavo/zip/(.*)", "uploadPattern": "lp2go-uavo/zip/(.*)"}
+        {"includePattern": "lp2go-uavo/zip/(.*)", "uploadPattern": "zip/$1"}
         ],
     "publish": true
 }
