@@ -2,11 +2,8 @@ language: bash
 script:
 - "./uavo.sh https://bitbucket.org/librepilot/librepilot.git librepilot next"
 - "./uavo.sh https://bitbucket.org/librepilot/librepilot.git librepilot tags/15.09"
-- "./uavo.sh https://bitbucket.org/alessiomorale/librepilot.git librepilot amorale/LP-276_measurement_based_d_term"
-- "./uavo.sh https://bitbucket.org/TheOtherCliff/librepilot.git librepilot theothercliff/LP-76_Port_Autotune_from_dRonin"
-- "./uavo.sh https://bitbucket.org/TheOtherCliff/librepilot.git librepilot theothercliff/LP-340_AutoTune_fix_some_time_measurement_issues_in_original_code"
-- "./uavo.sh https://bitbucket.org/TheOtherCliff/librepilot.git librepilot theothercliff/LP-225_sonar_support"
-- "./uavo.sh https://bitbucket.org/librepilot/librepilot.git librepilot shared/LP-72_Sparky2_support"
+- "./uavo.sh https://bitbucket.org/librepilot/librepilot.git librepilot rel-16.09"
+- "./uavo.sh https://bitbucket.org/librepilot/librepilot.git librepilot tags/16.09-RC1"
 
 before_install:
 - chmod +x uavo.sh
