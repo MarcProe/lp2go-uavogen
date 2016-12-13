@@ -1,8 +1,7 @@
 language: bash
 script:
 - "./uavo.sh https://bitbucket.org/librepilot/librepilot.git librepilot next"
-- "./uavo.sh https://bitbucket.org/librepilot/librepilot.git librepilot rel-16.09"
-- "./uavo.sh https://bitbucket.org/librepilot/librepilot.git librepilot tags/16.09-RC2"
+- "./uavo.sh https://bitbucket.org/librepilot/librepilot.git librepilot tags/16.09"
 before_install:
 - chmod +x uavo.sh
 env:
